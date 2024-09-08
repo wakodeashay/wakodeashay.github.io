@@ -1,1 +1,1 @@
-This is the source code to Jon Barron's public academic website: https://jonbarron.info/. Feel free to clone this code for your own personal use.
+This is the source code to Ashay Wakode's public academic website: . Feel free to clone this code for your own personal use. This code is a fork of Jon Barron's website.
