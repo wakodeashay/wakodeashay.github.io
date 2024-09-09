@@ -72,33 +72,39 @@
               <tr onmouseout="nuvo_stop()" onmouseover="nuvo_start()">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
-                    <div class="two" id='nuvo_image'><video width=100% muted autoplay loop>
-                        <source src="images/nuvo.mp4" type="video/mp4">
+                    <div class="two" id='nuvo_image'>
+                      <video  id="zoomVideo" width=100% muted autoplay loop>
+                        <source src="images/patrol.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                       </video></div>
-                    <img src='images/nuvo.jpg' width=100%>
+                    <img src='images/initial_workspace.png' width=100%>
                   </div>
                   <script type="text/javascript">
                     function nuvo_start() {
                       document.getElementById('nuvo_image').style.opacity = "1";
+                      document.getElementById('zoomVideo').style.transform = "scale(1.5)"; // Zoom to 120%
+                    document.getElementById('zoomVideo').style.transition = "transform 0.5s ease"; // Smooth zoom
+                    width
                     }
 
                     function nuvo_stop() {
                       document.getElementById('nuvo_image').style.opacity = "0";
+                      document.getElementById('nuvo_image').style.opacity = "0";
+                    document.getElementById('zoomVideo').style.transform = "scale(1.5)"; // Return to original size
+      
                     }
                     nuvo_stop()
                   </script>
                 </td>
                 <td style="padding:20px;width:75%;vertical-align:middle">
                   <a href="https://pratulsrinivasan.github.io/nuvo/">
-                    <span class="papertitle">Nuvo: Neural UV Mapping for Unruly 3D Representations</span>
+                    <span class="papertitle">MAP3R: Multi-agent Persistence Priority Patrolling with
+                      Recharging</span>
                   </a>
                   <br>
-                  <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>,
-                  <a href="http://stephangarbin.com/">Stephan J. Garbin</a>,
-                  <a href="https://dorverbin.github.io/">Dor Verbin</a>,
-                  <strong>Jonathan T. Barron</strong>,
-                  <a href="https://bmild.github.io/">Ben Mildenhall</a>
+                  <strong>Ashay Wakode</strong>,
+                  Vishnu Chipade,
+                  <a href="https://sites.google.com/iitb.ac.in/arpitasinha">Arpita Sinha</a>
                   <br>
                   <em>ECCV</em>, 2024
                   <br>
@@ -109,8 +115,7 @@
                   <a href="http://arxiv.org/abs/2312.05283">arXiv</a>
                   <p></p>
                   <p>
-                    Neural fields let you recover editable UV mappings for the challenging geometries produced by
-                    NeRF-like models.
+                    In this paper I'm exploring MAP3R
                   </p>
                 </td>
               </tr>
@@ -119,41 +124,35 @@
               <tr onmouseout="nlt_stop()" onmouseover="nlt_start()">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
-                    <div class="two" id='nlt_image'><video width=100% height=100% muted autoplay loop>
-                        <source src="images/nlt_after.mp4" type="video/mp4">
+                    <div class="two" id='nlt_image'>
+                      <video id="zoomVideo" width=100% muted autoplay loop>
+                        <source src="images/hcpp_animation.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                       </video></div>
-                    <img src='images/nlt_before.jpg' width="160">
+                    <img src='images/hcpp.jpg' width="160">
                   </div>
                   <script type="text/javascript">
                     function nlt_start() {
                       document.getElementById('nlt_image').style.opacity = "1";
+                      document.getElementById('zoomVideo').style.transform = "scale(1.0)"; // Zoom to 120%
+                    document.getElementById('zoomVideo').style.transition = "transform 0.5s ease"; // Smooth zoom
                     }
 
                     function nlt_stop() {
                       document.getElementById('nlt_image').style.opacity = "0";
+                      document.getElementById('nlt_image').style.opacity = "0";
+                    document.getElementById('zoomVideo').style.transform = "scale(1.0)"; // Return to original size
                     }
                     nlt_stop()
                   </script>
                 </td>
                 <td style="padding:20px;width:75%;vertical-align:middle">
                   <a href="http://nlt.csail.mit.edu/">
-                    <span class="papertitle">Neural Light Transport for Relighting and View Synthesis</span>
+                    <span class="papertitle">Online Coverage for unstructured enironment using Space Filling curves</span>
                   </a>
                   <br>
-                  <a href="http://people.csail.mit.edu/xiuming/">Xiuming Zhang</a>,
-                  <a href="http://www.seanfanello.it/">Sean Fanello</a>,
-                  <a href="https://research.google/people/105312/">Yun-Ta Tsai</a>,
-                  <a href="http://kevinkingo.com/">Tiancheng Sun</a>,
-                  <a href="https://tianfan.info/">Tianfan Xue</a>,
-                  <a href="https://research.google/people/106687/">Rohit Pandey</a>,
-                  <a href="https://www.dtic.ua.es/~sorts/">Sergio Orts-Escolano</a>,
-                  <a href="https://dl.acm.org/profile/99659224296">Philip Davidson</a>,
-                  <a href="https://scholar.google.com/citations?user=5D0_pjcAAAAJ&hl=en">Christoph Rhemann</a>,
-                  <a href="http://www.pauldebevec.com/">Paul Debevec</a>,
-                  <strong>Jonathan T. Barron</strong>,
-                  <a href="http://cseweb.ucsd.edu/~ravir/">Ravi Ramamoorthi</a>,
-                  <a href="http://billf.mit.edu/">William T. Freeman</a>
+                  <strong>Ashay Wakode</strong>,
+                  <a href="https://sites.google.com/iitb.ac.in/arpitasinha">Arpita Sinha</a>
                   <br>
                   <em>ACM TOG</em>, 2021
                   <br>
@@ -168,19 +167,18 @@
 
               <tr>
                 <td style="padding:20px;width:25%;vertical-align:middle">
-                  <img src="images/bd_promo.jpg" alt="blind-date" width="160" height="160">
+                  <img src="images/4Rmani.jpg" alt="blind-date" width="160" height="160">
                 </td>
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <a href="https://drive.google.com/file/d/1PQjzKgFcrAesMIDJr-WDlCwuGUxZJZwO/view?usp=sharing">
-                    <span class="papertitle">Blind Date: Using Proper Motions to Determine the Ages of Historical
-                      Images</span>
+                    <span class="papertitle">Terminal Singular Value based Inverse Kinematic
+                      formulation for Redundant Serial Manipulator</span>
                   </a>
                   <br>
-                  <strong>Jonathan T. Barron</strong>, <a href="http://cosmo.nyu.edu/hogg/">David W. Hogg</a>, <a
-                    href="http://www.astro.princeton.edu/~dstn/">Dustin Lang</a>, <a
-                    href="http://cs.nyu.edu/~roweis/">Sam Roweis</a>
+                  <strong>Ashay Wakode</strong>, <a href="https://sites.google.com/iitb.ac.in/arpitasinha">Arpita Sinha</a>, <a
+                    href="https://www.me.iitb.ac.in/faculty/prof-anirban-guha">Anirban Guha</a>
                   <br>
-                  <em>The Astronomical Journal</em>, 136, 2008
+                  <em>Master's Thesis</em>, August 2022
                   <p>Using the relative motions of stars we can accurately estimate the date of origin of historical
                     astronomical images.</p>
                 </td>
@@ -196,16 +194,61 @@
                       Stage 4 Orbital Platform</span>
                   </a>
                   <br>
-                  Karan Jagdale, Mrigi Munjal, Prashant Kurrey, <strong>Ashay Wakode</strong>, Pushkar Lohiya, Puneet Shrivas, Anmol Sikka,
-                  Sanskriti Bhansali, Abhishek Kejriwal, Amrutha Lakshmi Vadladi, Ankit Kumar, Atharva Savarkar, Hemant Dilip Gidewar,
+                  Karan Jagdale, Mrigi Munjal, Prashant Kurrey, <strong>Ashay Wakode</strong>, Pushkar Lohiya, Puneet
+                  Shrivas, Anmol Sikka,
+                  Sanskriti Bhansali, Abhishek Kejriwal, Amrutha Lakshmi Vadladi, Ankit Kumar, Atharva Savarkar, Hemant
+                  Dilip Gidewar,
                   Hrithik Agarwal, Mohit Dhaka, Pranav G Kasat, Ritul Shinde, Shreya Laddha, Adesh Yadav, Akshat Mehta,
-                  Dhanush S, Ishan Phansalkar, Jayant Saboo, Kriti Verma, Leena Chaudhari, Navjit Debnath, Shreeya Shrikant Athaley,
+                  Dhanush S, Ishan Phansalkar, Jayant Saboo, Kriti Verma, Leena Chaudhari, Navjit Debnath, Shreeya
+                  Shrikant Athaley,
                   Shreyas Sabnis, Vidushi Verma, Vineet Gala, Yatin Jindal
                   <br>
                   <em>2nd National Conference on Small Satellite Technology and Applications-2020</em>
-                  <p>We developed Sanket (1U Cubesat) to qualify the team's Antenna Deployment Syetem in Ultra High Frequency band to TRL-7 in Low earth Orbit.</p>
+                  <p>We developed Sanket (1U Cubesat) to qualify the team's Antenna Deployment Syetem in Ultra High
+                    Frequency band to TRL-7 in Low earth Orbit.</p>
                 </td>
               </tr>
+
+              <tr>
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <img src="images/skc.jpg" alt="clean-usnob" width="160" height="160">
+                </td>
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <a href="https://drive.google.com/drive/folders/13PqA4Q8UCv62kYgnTou-wYf8QXupkFfD?usp=sharing">
+                    <span class="papertitle">Online Evasive Strategy for Aerial Survey using Sierpinski curve</span>
+                  </a>
+                  <br>
+                  <strong>Ashay Wakode</strong>, Arpita Sinha
+                  <br>
+                  <em>IFAC Symposium on Automatic Control in Aerospace (ACA 2022)</em>
+                  <p>In this Paper we did someting</p>
+                </td>
+              </tr>
+
+              <tr>
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <img src="images/sanket_1.JPG" alt="clean-usnob" width="160" height="160">
+                </td>
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <a href="https://drive.google.com/drive/folders/13PqA4Q8UCv62kYgnTou-wYf8QXupkFfD?usp=sharing">
+                    <span class="papertitle">Survey and Analysis of Payloads for Missions on PSLV's Orbital
+                      Platform</span>
+                  </a>
+                  <br>
+                  Aniruddha R Ranade, Anmol Sikka, Sanskriti Bhansali, Karan S Jagdale, Puneet Shrivas, Piyush
+                  Jirwankar, Mayuresh Bhattu, Aryan Lall, Prashant Kurrey, <strong>Ashay Wakode</strong>, Dhananjay Tiwari, Niket Parikh,
+                  Neilabh Banzal, KT Prajwal Prathiksh, Shaun Zacharia, Millen Kanabar, Shreya Laddha, Atharv V
+                  Savarkar, Amrutha L Vadladi, Mohit Dhaka, Yuktee Gupta, Abhishek Kejriwal, Hrithik Agrawal, Aakash V,
+                  Ritul Shinde, Mitalee Oza, Rohit K Yadav, Rateesh A Sabde, Chinmay Bharti, Pranav G Kasat, Bhavini
+                  Jeloka, Rikin Shah
+                  <br>
+                  <em>2nd National Conference on Small Satellite Technology and Applications-2020</em>
+                  <p>We developed Sanket (1U Cubesat) to qualify the team's Antenna Deployment Syetem in Ultra High
+                    Frequency band to TRL-7 in Low earth Orbit.</p>
+                </td>
+              </tr>
+
+
             </tbody>
           </table>
 
